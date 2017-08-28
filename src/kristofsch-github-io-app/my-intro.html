@@ -1,0 +1,29 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<dom-module id="my-intro">
+  <template>
+    <p>
+        Hello, testing some things around SEO and Web Components
+    </p>
+  </template>
+
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class MyIntro extends Polymer.Element {
+      static get is() { return 'my-intro'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'my-intro'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(MyIntro.is, MyIntro);
+  </script>
+</dom-module>
